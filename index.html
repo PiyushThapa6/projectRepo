@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Transport App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Bus App</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#routes">Routes</a></li>
+                <li><a href="#timetable">Timetable</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>Welcome to Bus Transport</h1>
+            <p>Your journey starts here. Explore routes and book tickets with ease.</p>
+            <button class="cta-btn" id="book-now">Book Now</button>
+        </div>
+    </section>
+
+    <!-- Routes Section -->
+    <section id="routes" class="routes">
+        <div class="container">
+            <h2>Popular Routes</h2>
+            <div class="route-cards">
+                <div class="route-card">
+                    <div class="route-card-image" style="background-image: url('https://via.placeholder.com/600x400');"></div>
+                    <div class="route-card-info">
+                        <h3>City Center -> Downtown</h3>
+                        <p>Fast and comfortable journey from the City Center to Downtown.</p>
+                        <button class="route-btn">View Details</button>
+                    </div>
+                </div>
+                <div class="route-card">
+                    <div class="route-card-image" style="background-image: url('https://via.placeholder.com/600x400');"></div>
+                    <div class="route-card-info">
+                        <h3>Airport -> Central Station</h3>
+                        <p>Direct bus service from the airport to the central station.</p>
+                        <button class="route-btn">View Details</button>
+                    </div>
+                </div>
+                <div class="route-card">
+                    <div class="route-card-image" style="background-image: url('https://via.placeholder.com/600x400');"></div>
+                    <div class="route-card-info">
+                        <h3>Suburb -> University</h3>
+                        <p>A quick route for students from Suburb to the University.</p>
+                        <button class="route-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timetable Section -->
+    <section id="timetable" class="timetable">
+        <div class="container">
+            <h2>Bus Timetable</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Route</th>
+                        <th>Departure</th>
+                        <th>Arrival</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>City Center -> Downtown</td>
+                        <td>08:00 AM</td>
+                        <td>08:30 AM</td>
+                        <td>30 mins</td>
+                    </tr>
+                    <tr>
+                        <td>Airport -> Central Station</td>
+                        <td>09:00 AM</td>
+                        <td>09:45 AM</td>
+                        <td>45 mins</td>
+                    </tr>
+                    <tr>
+                        <td>Suburb -> University</td>
+                        <td>10:00 AM</td>
+                        <td>10:25 AM</td>
+                        <td>25 mins</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2>Book Your Ticket</h2>
+            <form action="#" method="post" id="booking-form">
+                <label for="route">Select Route:</label>
+                <select id="route" name="route">
+                    <option value="route1">City Center -> Downtown</option>
+                    <option value="route2">Airport -> Central Station</option>
+                    <option value="route3">Suburb -> University</option>
+                </select>
+
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date">
+
+                <label for="passengers">Number of Passengers:</label>
+                <input type="number" id="passengers" name="passengers" min="1" value="1">
+
+                <button type="submit" class="cta-btn">Book Ticket</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map" class="map">
+        <div class="container">
+            <h2>Bus Routes Map</h2>
+            <div id="map-container">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1ZIIfZ7RfrzsbN6t8GR8MlW2Y-30I5up2" width="100%" height="500"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have any questions? Get in touch with us.</p>
+            <form action="#" method="post" id="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="cta-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Bus Transport App. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
